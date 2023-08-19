@@ -12,7 +12,7 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    if y != 0:
+    if b != 0:
         return a / b
     else:
         return "Cannot divide by zero"
