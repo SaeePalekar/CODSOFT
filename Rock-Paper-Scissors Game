@@ -1,6 +1,6 @@
 import random
 me = input("Enter a choice (rock, paper, scissors): ")
-elements = ["rock", "paper", "scissors"]
+elements = ["rock", "paper", "scissors"}
 outcome1= random.choice(elements)
 print(f"\nYou chose {me}, computer chose {outcome1}.\n")
 if me == outcome1:
