@@ -1,0 +1,73 @@
+import random
+me = input("Enter a choice (rock, paper, scissors): ")
+elements = ["rock", "paper", "scissors"]
+outcome1= random.choice(elements)
+print(f"\nYou chose {me}, computer chose {outcome1}.\n")
+if me == outcome1:
+    print(f"Both players selected {outcome1}. It's a tie!")
+elif me == "rock":
+    if me== "scissors":
+        print("Rock beats scissors! You win!")
+    else:
+        print("Paper beats rock! You lose.")
+elif me == "paper":
+    if outcome1 == "rock":
+        print("Paper beats rock! You win!")
+    else:
+        print("Scissors beats paper! You lose.")
+elif me == "scissors":
+    if outcome1 == "paper":
+        print("Scissors beats paper! You win!")
+    else:
+        print("Rock beats scissors! You lose.")
+
+me = input("Enter a choice (rock, paper, scissors): ")
+elements = ["rock", "paper", "scissors"]
+outcome2 = random.choice(elements)
+print(f"\nYou chose {me}, computer chose {outcome2}.\n")
+
+if me == outcome2:
+    print(f"Both players selected {me}. It's a tie!")
+elif me == "rock":
+    if outcome2 == "scissors":
+        print("Rock beats scissors! You win!")
+    else:
+        print("Paper beats rock! You lose.")
+elif me == "paper":
+    if outcome2 == "rock":
+        print("Paper beats rock! You win!")
+    else:
+        print("Scissors beats paper! You lose.")
+elif me == "scissors":
+    if outcome2 == "paper":
+        print("Scissors beats paper! You win!")
+    else:
+        print("Rock beats scissors! You lose.")
+
+while True:
+    me = input("Enter a choice (rock, paper, scissors): ")
+    elements= ["rock", "paper", "scissors"]
+    outcome3 = random.choice(elements)
+    print(f"\nYou chose {me}, computer chose {outcome3}.\n")
+
+    if me == outcome3:
+        print(f"Both players selected {me}. It's a tie!")
+    elif me == "rock":
+        if outcome3 == "scissors":
+            print("Rock beats scissors! You win!")
+        else:
+            print("Paper beats rock! You lose.")
+    elif me == "paper":
+        if outcome3 == "rock":
+            print("Paper beats rock! You win!")
+        else:
+            print("Scissors beats paper! You lose.")
+    elif me == "scissors":
+        if outcome3 == "paper":
+            print("Scissors beats paper! You win!")
+        else:
+            print("Rock beats scissors! You lose.")
+
+    play_onceagain = input("Play again? (y/n): ")
+    if play_onceagain.lower() != "y":
+        break
